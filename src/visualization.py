@@ -7,6 +7,7 @@ import dash_html_components as html
 from dash.dependencies import Input, Output
 
 app = dash.Dash(__name__)
+server = app.server()
 
 #Dataframe determined from running the cleaning script on the raw election odds
 df = pd.read_csv('data/final_odds.csv', parse_dates=['date'])
